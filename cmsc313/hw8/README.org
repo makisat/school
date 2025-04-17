@@ -1,0 +1,30 @@
+* Matrix Operations for CMSC313
+
+** AUTHORING
+*** Author: Makiya Sato
+*** Affiliation: University of Maryland, Baltimore County
+*** Course: CMSC313
+*** Timestamp: 2025-04-16 18:40
+** Purpose of Software
+This software implements matrix in C++ and C
+** Files
+- main.cpp
+- main.c
+- README.org
+** Build Instruction
+*** main.cpp
+#+begin_src sh
+  g++ main.cpp -Wall -o main_cpp # compile c++ code
+#+end_src
+*** main.c
+#+begin_src sh
+  gcc main.c -Wall -std=c99 -o main_c # compile c code
+#+end_src
+** Testing Methodology
+After compiled, run the executables
+#+begin_src sh
+  ./main_cpp    # test for c++
+  ./main_c      # test for c
+#+end_src
+** Additional Information
+- Tested in linux operating system
