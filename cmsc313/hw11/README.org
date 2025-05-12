@@ -1,0 +1,38 @@
+#+TITLE:  HW11 — translate2Ascii
+#+AUTHOR:  Makiya Sato
+#+OPTIONS:  toc:nil num:nil ^:nil
+
+* Info
+Name: Makiya Sato
+Course: CMSC313
+
+* Assignment
+Convert each byte in inputBuf into two ASCII hex digits, add a trailing space,
+replace the very last space with a newline, and print the entire line to
+standard output.
+
+Expected runtime output:
+
+#+begin_example
+83 6A 88 DE 9A C3 54 9A
+#+end_example
+
+* Files in this repo
+| File                       | Purpose       |
+|----------------------------+---------------|
+| =hw11_translate2ascii.asm= | NASM source   |
+| =README.org=               | This document |
+
+* How to build & test
+
+#+begin_src bash
+nasm -f elf32 hw11_translate2ascii.asm
+ld -m elf_i386 -o hw11translate2Ascii hw11_translate2ascii.o
+./hw11translate2Ascii
+#+end_src
+
+* What the program will produce
+
+#+begin_example
+83 6A 88 DE 9A C3 54 9A⏎
+#+end_example
